@@ -1,9 +1,9 @@
 FactoryGirl.define do
   factory :store do
-    store_name "MyString"
-    store_address "MyText"
-    store_state "MyString"
-    store_postcode 1
-    store_phone "MyString"
+    store_name {FFaker::Company.name}
+    store_address {FFaker::AddressUK.city}
+    store_state {FFaker::AddressUK.country}
+    store_postcode {FFaker::AddressUK.postcode}
+    store_phone {FFaker::PhoneNumber.phone_number}
   end
 end

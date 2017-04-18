@@ -17,8 +17,7 @@ ActiveRecord::Schema.define(version: 20170418083441) do
 
   create_table "customers", force: :cascade do |t|
     t.string   "customer_name"
-    t.string   "customer_address"
-    t.string   "text"
+    t.text     "customer_address"
     t.integer  "customer_postcode"
     t.string   "customer_state"
     t.string   "customer_phone"
